@@ -18,7 +18,8 @@
 }
 
 .borderbt{
-    border-bottom:var(--maroon-color) 3px solid
+    border-bottom:var(--maroon-color) 3px solid;
+    
 }
 .container{
     width: 90vw;
@@ -41,8 +42,9 @@ logo h1{
     font-size: 35px;
     border-bottom: none;
 }
-h3{
+.showcase2 h3, .showcase3 h3, .showcase4 h3, .showcase5 h3{
     border-bottom: var(--golden-color) 3px solid;
+    
 }
 .center{
     display: flex;
@@ -72,12 +74,19 @@ Navbar {
     color: aliceblue;
     padding:50px 0;
 }
-.showcase0 a{
-    color: aliceblue;
-    text-decoration: none;
-    border: 2px solid white;
-    padding:10px;
-    margin-top: -20px;
+.showcase0 .btnanime {
+  background-color: var(--golden-color);
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  padding-top:5px;
+  border: aliceblue 3px solid;
+  border-top: none;
+  color:var(--maroon-color);
+  text-decoration: none;
+  margin-top: 100px;
+  border-radius: 3px;
+  font-family: "Roboto";
 }
 
 .showcase0 h6{
@@ -101,16 +110,16 @@ Navbar {
 
 .showcase1 .btnanime {
     background-color: var(--golden-color);
-    height: 70px;
+    height: 60px;
     width: 150px;
     text-align: center;
-    padding-top:10px;
-    border: aliceblue 5px solid;
+    padding-top:5px;
+    border: aliceblue 3px solid;
     border-top: none;
     color:var(--maroon-color);
     text-decoration: none;
     margin-bottom: 100px;
-    border-radius: 1px;
+    border-radius: 3px;
     font-family: "Roboto";
 }
 
@@ -268,10 +277,24 @@ Navbar {
     left: -100%;
     z-index: 2;
     animation: borderMove 5.5s infinite;
-    border-top: 5px solid aliceblue; /* Red border color */
+    border-top: 3px solid aliceblue; /* Red border color */
   }
 
+  @keyframes borderAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 
+  /* Apply the animation to elements with the 'animated-border' class */
+  .animated-border {
+    position: relative;
+    border-bottom: 2px solid black; /* Initial border style */
+    animation: borderAnimation 2.5s forwards infinite; /* 0.5s duration for the animation */
+  }
 
   @keyframes borderMove {
     0% {
