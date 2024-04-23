@@ -15,7 +15,7 @@
   <Navbar class="center">
     <div class="container navbar">
       <logo>
-        <h1>WAWS MEDIA</h1>
+        <a href="./index.html"><h1>WAWS MEDIA</h1></a>
       </logo>
       <manue>
         <ul class="center items borderbt navItems">
@@ -40,8 +40,8 @@
     <a href="./read.html"><button class="btnanime"><span></span>Read More</button></a>
   </div>
 
-  <div id="triggerDiv1" class="showcase2">
-    <div class="container">
+  <div id="triggerDiv1" class="showcase2 ">
+    <div id="mydiv" class="container reveal">
       <div class="img">
         <img src="./images/wisdom.jpg" class="contentImage slideFromRight" />
       </div>
@@ -51,17 +51,19 @@
           discernment over impulse, patience over haste, and humility over arrogance. Wisdom illuminates paths, born
           from experience, reflection, and empathy. It's the compass guiding actions, nurturing growth, and fostering
           harmony in the tapestry of existence.</p>
+          <a href="./products.html"><button class="btn-products">Products</button></a>
       </div>
     </div>
   </div>
   <div id="triggerDiv2" class="showcase3">
-    <div class="container">
+    <div class="container reveal">
       <div class="text">
         <h3 class="animated-border">Athletics</h3>
         <p>Athletics encompasses various competitive physical activities, emphasizing speed, strength, and skill. It
           spans track and field events, such as running, jumping, and throwing. Governed by rules and regulations,
           athletics promotes fair play and sportsmanship, fostering camaraderie among athletes while showcasing human
           potential and achievement on the global stage.</p>
+          <a href="./products.html"><button class="btn-products">Products</button></a>
       </div>
       <div class="img">
         <img src="./images/athletics.jpg" class="contentImage slideFromLeft" />
@@ -69,7 +71,7 @@
     </div>
   </div>
   <div id="triggerDiv3" class="showcase4">
-    <div class="container">
+    <div class="container reveal">
       <div class="img">
         <img src="./images/internet.jpg" class="contentImage slideFromRight" />
       </div>
@@ -79,17 +81,19 @@
           sharing, and commerce. Its laws vary across jurisdictions, covering issues like data privacy, copyright, and
           cybercrime. It's a virtual space where users interact, create content, and navigate within a framework of
           legal regulations to ensure safety and fair use.</p>
+          <a href="./products.html"><button class="btn-products">Products</button></a>
       </div>
     </div>
   </div>
   <div id="triggerDiv4" class="showcase5">
-    <div class="container">
+    <div class="container reveal">
       <div class="text">
         <h3 class="animated-border">Self</h3>
         <p>Self is the nucleus of identity, amalgamating beliefs, desires, and experiences into a cohesive entity. Its
           meaning fluctuates with philosophy and psychology, embodying autonomy and awareness. Governed by laws of
           introspection, authenticity, and growth, it seeks equilibrium between societal conformity and individuality,
           forging a unique path of existence.</p>
+          <a href="./products.html"><button class="btn-products">Products</button></a>
       </div>
       <div class="img">
         <img src="./images/self.jpg" class="contentImage slideFromLeft" />
@@ -102,7 +106,7 @@
   <a href="https://www.instagram.com/raufgoher/" target="_blank" class="instagramBtn">
     <i class="fab fa-instagram"></i>
   </a>
-  <a href="https://m.me/profile.php?id=100095038455506" target="_blank" class="messengerBtn">
+  <a href="https://www.facebook.com/profile.php?id=100095038455506" target="_blank" class="messengerBtn">
     <i class="fab fa-facebook-messenger"></i>
   </a>
   <a href="https://wa.me/+923426167711" target="_blank" class="whatsApp">
@@ -111,17 +115,6 @@
   <button onclick="scrollToTop()" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i>
   </button>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>

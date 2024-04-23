@@ -9,12 +9,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 :root{
     --black-color: #1e1717;
     --maroon-color: #3f1111;
     --green-color: #1d4428;
     --golden-color: #775914;
+}
+
+body{
+  background-color: var(--green-color);
 }
 
 .borderbt{
@@ -27,6 +32,30 @@
     justify-content: center;
     align-items: center;
 }
+.btn-products{
+    background-color: var(--green-color);
+    border: var(--golden-color);
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    margin-left: 10px;
+    border: var(--golden-color) 3px solid;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -36,6 +65,9 @@
 logo h1{
     border: var(--maroon-color) 3px solid;
     padding:10px
+}
+logo a{
+  color: aliceblue;
 }
 .showcase0 h3{
     font-family: 'Segoe UI';
@@ -127,6 +159,7 @@ Navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
 }
 .contentImage{
     max-width: 100%;
@@ -166,11 +199,6 @@ Navbar {
     text-align: center;
      margin-top: 10px;
 }
-
-#triggerDiv1, #triggerDiv2, #triggerDiv3, #triggerDiv4 {
-    opacity: 1; /* or any other initial styling */
-    transition: opacity 1s; /* Example: fade-in animation */
-  }
   #scrollToTopBtn, .whatsApp {
     position: fixed;
     bottom: 20px;
