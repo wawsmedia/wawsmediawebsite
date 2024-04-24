@@ -53,6 +53,22 @@ body{
     margin-bottom: 20px;
     animation: spin 4s infinite;
 }
+.product-card {
+  box-shadow: 0 4px 8px 0 var(--maroon-color);
+  transition: 0.3s;
+  width: 340px;
+  background-color: var(--golden-color);
+  margin: 10px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px 0 var(--maroon-color);
+}
+
+.product-card-container {
+  padding: 2px 16px;
+}
+
 .reveal{
   position: relative;
   transform: translateY(150px);
