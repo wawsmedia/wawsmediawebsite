@@ -32,6 +32,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.container2{
+  width: 90vw;
+  margin: 10px auto;
+  padding:10px;
+}
 .btn-products{
     background-color: var(--green-color);
     border: var(--golden-color);
@@ -51,7 +57,7 @@ body{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 4s ease;
+  transition: all 2s ease;
 }
 .reveal.active{
   transform: translateY(0px);
@@ -415,9 +421,15 @@ Navbar {
   /* Read More Page-------------------------------------------------------------- */
 
   .read-more{
-    background-image: linear-gradient(135deg, #533E0E, #775914);
-    
+    background-image: linear-gradient(135deg, #6b5012, #775914);
   }
-  .read-more .container {
-    
-  }
+ .read-more h2,h3,h4{
+  text-decoration: underline;
+  text-decoration-color: var(--green-color);
+  text-decoration-thickness: 3px;
+ }
+ .read-more h5{
+  text-decoration: underline;
+  text-decoration-color: var(--maroon-color);
+  text-decoration-thickness: 2px;
+ }
