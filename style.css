@@ -59,6 +59,8 @@ body{
   width: 340px;
   background-color: var(--golden-color);
   margin: 10px;
+  border-radius: 10px;
+  color: aliceblue;
 }
 
 .product-card:hover {
@@ -68,7 +70,15 @@ body{
 .product-card-container {
   padding: 2px 16px;
 }
-
+.product-card img {
+  border-radius: 10px 10px 0 0;
+}
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .reveal{
   position: relative;
   transform: translateY(150px);
