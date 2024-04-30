@@ -53,6 +53,21 @@ body{
     margin-bottom: 20px;
     animation: spin 4s infinite;
 }
+.btn-contactus{
+  background-color: var(--maroon-color);
+  border: var(--golden-color);
+  height: 40px;
+  width: 130px;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  margin-left: 10px;
+  border: var(--golden-color) 3px solid;
+  cursor: pointer;
+  margin-bottom: 20px;
+  animation: borderExpand 3s infinite;
+}
 .product-card {
   box-shadow: 0 4px 8px 0 var(--maroon-color);
   transition: 0.3s;
@@ -61,6 +76,7 @@ body{
   margin: 10px;
   border-radius: 10px;
   color: aliceblue;
+  padding: 5px;
 }
 
 .product-card:hover {
@@ -70,8 +86,11 @@ body{
 .product-card-container {
   padding: 2px 16px;
 }
+.product-card-container h4 {
+  margin-bottom: 5px;
+}
 .product-card img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 .products{
   display: flex;
@@ -354,9 +373,9 @@ Navbar {
   }
 
   /* Apply the animation to elements with the 'animated-border' class */
-  .animated-border {
+  .animated-border-products {
     position: relative;
-    border-bottom: 2px solid black; /* Initial border style */
+    border-bottom: 3px solid var(--maroon-color); /* Initial border style */
     animation: borderAnimation 2.5s forwards infinite; /* 0.5s duration for the animation */
   }
 
@@ -446,16 +465,26 @@ Navbar {
 
   /* Read More Page-------------------------------------------------------------- */
 
-  .read-more{
+  .read-more-page{
     background-image: linear-gradient(135deg, #6b5012, #775914);
   }
- .read-more h2,h3,h4{
+ .read-more-page h2,.read-more-page h3,.read-more-page h4{
   text-decoration: underline;
   text-decoration-color: var(--green-color);
   text-decoration-thickness: 3px;
  }
- .read-more h5{
+ .read-more-page h5{
   text-decoration: underline;
   text-decoration-color: var(--maroon-color);
   text-decoration-thickness: 2px;
  }
+
+ /* products-------------------------- */
+ .animated-border-products {
+  border-bottom: 3px solid var(--maroon-color); /* Initial border style */
+  animation: borderAnimation 2.5s forwards infinite; /* 0.5s duration for the animation */
+}
+
+.products h4{
+  border-bottom: 3px solid var(--maroon-color);
+}
