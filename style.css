@@ -496,8 +496,9 @@ Navbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   background: var(--green-color);
+  margin-top: 2%;
+  font-family: 'Roboto';
 }
 .contact-main a{
 color: white;
@@ -514,4 +515,8 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.intro{
+  width: 60%;
+  font-size: large;
 }
