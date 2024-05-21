@@ -488,7 +488,9 @@ Navbar {
 .products h4{
   border-bottom: 3px solid var(--maroon-color);
 }
-
+.products p {
+  text-align: justify;
+}
 /* contacts ---------------------------- */
 
 .contact-main{
@@ -515,8 +517,13 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 .intro{
-  width: 60%;
+  width: 80vw;
   font-size: large;
+}
+.icons a {
+  font-size: 50px;
+  margin:0 10px
 }
