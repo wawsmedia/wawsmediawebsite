@@ -265,6 +265,13 @@ Navbar {
   border: 3px solid var(--golden-color);
   font-size: medium;
 }
+@media (max-width: 460px) {
+  .blogLink{
+    font-size: small;
+  }
+}
+
+/* ---------------------------------------footer----------------------------------------------------- */
 .footer{
     background-color: var(--golden-color);
     color: aliceblue;
