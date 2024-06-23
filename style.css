@@ -243,7 +243,28 @@ Navbar {
     background-color: #3f1111;
     color: aliceblue;
 }
+/* ---------------------------------------Blogs-------------------------------------------------- */
+.blogs{
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  margin: 10px;
+}
 
+.blogs img {
+  flex: 1; 
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+}
+.blogLink{
+  background-color: aliceblue;
+  color: #6b5012;
+  padding:0 10px;
+  height: 40px;
+  border: 3px solid var(--golden-color);
+  font-size: medium;
+}
 .footer{
     background-color: var(--golden-color);
     color: aliceblue;
