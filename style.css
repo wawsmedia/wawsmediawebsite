@@ -264,6 +264,7 @@ Navbar {
   height: 40px;
   border: 3px solid var(--golden-color);
   font-size: medium;
+  cursor: pointer;
 }
 @media (max-width: 460px) {
   .blogLink{
