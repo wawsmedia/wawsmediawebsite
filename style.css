@@ -548,7 +548,7 @@ Navbar {
   align-items: center;
   flex-direction: column;
   background: var(--green-color);
-  margin-top: 2%;
+  margin: 2%;
   font-family: 'Roboto';
 }
 .contact-main a{
