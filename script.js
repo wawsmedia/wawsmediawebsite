@@ -17,3 +17,24 @@ function reveal(){
     }
   }
 }
+ // script.js
+
+// Check if the user has previously accepted or declined cookies
+document.addEventListener('DOMContentLoaded', function() {
+  if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookieConsent').style.display = 'block';
+  }
+});
+
+// Function to accept cookies
+function acceptCookies() {
+  localStorage.setItem('cookieConsent', 'accepted');
+  document.getElementById('cookieConsent').style.display = 'none';
+}
+
+// Function to decline cookies
+function declineCookies() {
+  localStorage.setItem('cookieConsent', 'declined');
+  document.getElementById('cookieConsent').style.display = 'none';
+  // Optionally, you can remove existing cookies or analytics trackers here
+}
