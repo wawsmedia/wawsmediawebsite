@@ -291,7 +291,17 @@ Navbar {
   border-bottom: var(--golden-color) 2px dotted;
   color: aliceblue;
 }
-
+@media (max-width: 640px) {
+  .main-footer{
+    padding:5px 10px
+  }
+}
+@media (max-width: 410px) {
+  .main-footer{
+    flex-direction: column;
+    align-items: start;
+  }
+}
 
 .footer{
     background-color: var(--golden-color);
