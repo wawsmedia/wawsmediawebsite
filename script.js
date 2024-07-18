@@ -38,3 +38,8 @@ function declineCookies() {
   document.getElementById('cookieConsent').style.display = 'none';
   // Optionally, you can remove existing cookies or analytics trackers here
 }
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
