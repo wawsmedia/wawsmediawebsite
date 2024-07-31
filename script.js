@@ -43,3 +43,26 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var hamburgerMenu = document.getElementById('hamburger-menu');
+  var updatedNav = document.getElementById('updated-nav');
+  var closeNav = document.getElementById('close-nav');
+
+
+  hamburgerMenu.addEventListener('click', function() {
+    if (updatedNav.classList.contains('show-nav')) {
+      updatedNav.classList.remove('show-nav');
+    } else {
+      updatedNav.classList.add('show-nav');
+    }
+  });
+
+  closeNav.addEventListener('click', function() {
+    updatedNav.classList.remove('show-nav');
+  });
+
+
+});
+
+
