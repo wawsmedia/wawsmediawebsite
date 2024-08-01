@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisdom</title>
+    <title>Self</title>
     <link rel="stylesheet" href="./blogStyles.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -88,7 +88,7 @@
             </logo>
             <div class="hamburger-menu" id="hamburger-menu">
                 <i class="fas fa-bars"></i>
-              </div>
+            </div>
             <manue class="updated-nav" id="updated-nav">
                 <ul class="center items borderbt navItems">
                     <li><a href="../index.html">Home</a></li>
@@ -101,19 +101,22 @@
                     <li><a href="../contacts.html">Contact us</a></li>
                     <li>
                         <div class="close-nav" id="close-nav">
-                          <i class="fas fa-times"></i>
+                            <i class="fas fa-times"></i>
                         </div>
-                      </li>
+                    </li>
                 </ul>
             </manue>
         </div>
     </Navbar>
     <div class="wisdom-main wisdom-container">
-        <div class="sidebar" id="sidebar">
-            <ul id="article-list" class="wisodm-ui"></ul>
+        <div class="dropdown">
+            <button class="dropbtn">Articles Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <ul id="article-list"></ul>
+            </div>
         </div>
         <div class="content" id="content">
-            <h2>Select an article from the list</h2>
+            <h2>Select an article from the Menu</h2>
         </div>
     </div>
     <button onClick="topFunction()" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i>
@@ -155,13 +158,13 @@
         </p>
     </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020858849691263"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script>
         // Array of articles
         const articles = [
-        {
-    title: "1: Setting and Achieving Goals: Strategies for Success",
-    content: `
+            {
+                title: "1: Setting and Achieving Goals: Strategies for Success",
+                content: `
     <h1>Setting and Achieving Goals: Strategies for Success</h1>
     
     <p>Setting and achieving goals is a foundational skill for personal growth and success. This article explores effective strategies for goal setting, actionable steps to achieve goals, overcoming obstacles, and maintaining motivation throughout the process.</p>
@@ -211,10 +214,10 @@
     
     <p>Setting and achieving goals requires dedication, persistence, and strategic planning. By applying effective goal-setting strategies, overcoming obstacles, and maintaining motivation, individuals can create a roadmap to personal and professional success, realizing their full potential and achieving long-term fulfillment.</p>
     `
-}
-,{
-    title: "2: Mindfulness and Its Impact on Personal Growth",
-    content: `
+            }
+            , {
+                title: "2: Mindfulness and Its Impact on Personal Growth",
+                content: `
     <h1>Mindfulness and Its Impact on Personal Growth</h1>
     
     <p>Mindfulness is a practice that enhances self-awareness, emotional regulation, and overall well-being. This article explores the concept of mindfulness, its benefits for personal growth, practical techniques for cultivating mindfulness, and integrating mindfulness into daily life.</p>
@@ -265,11 +268,11 @@
     
     <p>Mindfulness is a transformative practice that enhances personal growth, emotional well-being, and overall quality of life. By embracing mindfulness techniques, cultivating present-moment awareness, and integrating mindfulness into daily routines, individuals can nurture resilience, clarity, and inner peace, paving the way for continued self-discovery and fulfillment.</p>
     `
-}
-,
-{
-    title: "3: Building Resilience: Overcoming Adversity and Challenges",
-    content: `
+            }
+            ,
+            {
+                title: "3: Building Resilience: Overcoming Adversity and Challenges",
+                content: `
     <h1>Building Resilience: Overcoming Adversity and Challenges</h1>
     
     <p>Resilience is the ability to adapt and bounce back from setbacks, adversity, and stress. This article explores the concept of resilience, strategies for developing resilience, overcoming common obstacles, and fostering a resilient mindset for personal growth.</p>
@@ -319,10 +322,10 @@
     
     <p>Building resilience is essential for navigating life's challenges, embracing growth opportunities, and maintaining well-being. By adopting strategies to develop resilience, overcoming obstacles, and fostering a resilient mindset, individuals can enhance their capacity to bounce back from adversity, thrive in uncertain times, and achieve greater personal and professional success.</p>
     `
-},
-{
-    title: "4: Effective Time Management Techniques for Productivity",
-    content: `
+            },
+            {
+                title: "4: Effective Time Management Techniques for Productivity",
+                content: `
     <h1>Effective Time Management Techniques for Productivity</h1>
     
     <p>Time management is crucial for maximizing productivity and achieving personal and professional goals. This article explores effective time management techniques, prioritization strategies, overcoming common time-wasters, and tools for enhancing efficiency.</p>
@@ -372,10 +375,10 @@
     
     <p>Effective time management is essential for optimizing productivity, achieving goals, and maintaining work-life balance. By implementing proven time management techniques, overcoming common time-wasters, and utilizing tools for efficiency, individuals can enhance their organizational skills, maximize time utilization, and achieve greater success in personal and professional endeavors.</p>
     `
-},
-{
-    title: "5: The Power of Positive Thinking: Cultivating Optimism",
-    content: `
+            },
+            {
+                title: "5: The Power of Positive Thinking: Cultivating Optimism",
+                content: `
     <h1>The Power of Positive Thinking: Cultivating Optimism</h1>
     
     <p>Positive thinking is a mindset that focuses on the bright side of life and fosters optimism, resilience, and personal well-being. This article explores the concept of positive thinking, benefits for personal growth, strategies for cultivating optimism, and integrating positivity into daily life.</p>
@@ -426,11 +429,11 @@
     
     <p>Positive thinking is a powerful tool for personal growth, resilience, and well-being. By embracing positive thinking techniques, cultivating optimism, and integrating positivity into daily life, individuals can enhance their emotional health, build stronger relationships, and navigate life’s challenges with confidence and resilience.</p>
     `
-}
-,
-{
-    title: "6: Developing Emotional Intelligence for Better Relationships",
-    content: `
+            }
+            ,
+            {
+                title: "6: Developing Emotional Intelligence for Better Relationships",
+                content: `
     <h1>Developing Emotional Intelligence for Better Relationships</h1>
     
     <p>Emotional intelligence (EI) is the ability to recognize, understand, and manage emotions effectively, both in oneself and in others. This article explores the concept of emotional intelligence, its importance in relationships, strategies for developing EI, and practical tips for improving interpersonal connections.</p>
@@ -481,11 +484,11 @@
     
     <p>Emotional intelligence is essential for fostering healthy, meaningful relationships and enhancing personal well-being. By developing emotional intelligence, practicing empathy, improving communication skills, and fostering positive interpersonal connections, individuals can build stronger relationships, resolve conflicts constructively, and cultivate a supportive network of connections that enrich their lives.</p>
     `
-}
-,
-{
-    title: "7: Goal Setting and Achievement: Strategies for Personal Success",
-    content: `
+            }
+            ,
+            {
+                title: "7: Goal Setting and Achievement: Strategies for Personal Success",
+                content: `
     <h1>Goal Setting and Achievement: Strategies for Personal Success</h1>
     
     <p>Goal setting is a powerful process for personal growth, motivation, and achieving desired outcomes. This article explores the importance of goal setting, strategies for setting and achieving goals effectively, overcoming obstacles, and staying motivated throughout the journey.</p>
@@ -535,10 +538,10 @@
     
     <p>Goal setting is a key driver of personal success, growth, and achievement. By setting clear, actionable goals, developing effective strategies, overcoming obstacles, and staying motivated throughout the journey, individuals can realize their aspirations, fulfill their potential, and lead fulfilling lives.</p>
     `
-},
-{
-    title: "8: Building Confidence and Self-Esteem: A Path to Personal Empowerment",
-    content: `
+            },
+            {
+                title: "8: Building Confidence and Self-Esteem: A Path to Personal Empowerment",
+                content: `
     <h1>Building Confidence and Self-Esteem: A Path to Personal Empowerment</h1>
     
     <p>Confidence and self-esteem are essential for personal empowerment, resilience, and achieving goals. This article explores strategies for building confidence and self-esteem, overcoming self-doubt, embracing self-acceptance, and fostering a positive self-image.</p>
@@ -588,10 +591,10 @@
     
     <p>Building confidence and self-esteem is a transformative journey of self-discovery and personal empowerment. By adopting strategies to challenge self-limiting beliefs, embrace self-acceptance, and foster a positive self-image, individuals can cultivate resilience, achieve personal goals, and navigate life’s challenges with greater confidence and authenticity.</p>
     `
-}
-,{
-    title: "9: Effective Stress Management Techniques for Well-being",
-    content: `
+            }
+            , {
+                title: "9: Effective Stress Management Techniques for Well-being",
+                content: `
     <h1>Effective Stress Management Techniques for Well-being</h1>
     
     <p>Stress management is crucial for maintaining physical health, emotional well-being, and overall quality of life. This article explores effective stress management techniques, understanding stress triggers, implementing relaxation strategies, and fostering resilience to cope with daily pressures.</p>
@@ -641,10 +644,10 @@
     
     <p>Effective stress management is essential for promoting well-being, resilience, and overall quality of life. By implementing relaxation techniques, understanding stress triggers, fostering resilience, and integrating stress management strategies into daily life, individuals can reduce stress levels, enhance emotional health, and cultivate a balanced and fulfilling lifestyle.</p>
     `
-}
-,{
-    title: "10: Time Management Strategies for Personal Productivity",
-    content: `
+            }
+            , {
+                title: "10: Time Management Strategies for Personal Productivity",
+                content: `
     <h1>Time Management Strategies for Personal Productivity</h1>
     
     <p>Effective time management is crucial for achieving goals, increasing productivity, and maintaining work-life balance. This article explores time management principles, techniques for prioritizing tasks, overcoming procrastination, and optimizing productivity.</p>
@@ -693,7 +696,7 @@
     
     <p>Effective time management enhances personal productivity, goal achievement, and overall well-being. By implementing time management principles, prioritizing tasks, overcoming procrastination, and optimizing productivity strategies, individuals can maximize efficiency, reduce stress, and achieve a balanced and fulfilling lifestyle.</p>
     `
-}
+            }
 
 
 
@@ -719,9 +722,9 @@
         function displayContent(index) {
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = `
-                <h2>${articles[index].title}</h2>
-                <p>${articles[index].content}</p>
-            `;
+        <h2>${articles[index].title}</h2>
+        <p>${articles[index].content}</p>
+    `;
         }
 
         // Populate the sidebar initially

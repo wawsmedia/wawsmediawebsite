@@ -109,11 +109,16 @@
         </div>
     </Navbar>
     <div class="wisdom-main wisdom-container">
-        <div class="sidebar" id="sidebar">
-            <ul id="article-list" class="wisodm-ui"></ul>
-        </div>
+        
+            <div class="dropdown">
+                <button class="dropbtn">Articles Menu</button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <ul id="article-list"></ul>
+                </div>
+            </div>
+        
         <div class="content" id="content">
-            <h2>Select an article from the list</h2>
+            <h2>Select an article from the menu</h2>
         </div>
     </div>
     <button onClick="topFunction()" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i>
@@ -1250,9 +1255,9 @@
         function displayContent(index) {
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = `
-                <h2>${articles[index].title}</h2>
-                <p>${articles[index].content}</p>
-            `;
+        <h2>${articles[index].title}</h2>
+        <p>${articles[index].content}</p>
+    `;
         }
 
         // Populate the sidebar initially

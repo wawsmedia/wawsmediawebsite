@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisdom</title>
+    <title>Athletics</title>
     <link rel="stylesheet" href="./blogStyles.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -88,7 +88,7 @@
             </logo>
             <div class="hamburger-menu" id="hamburger-menu">
                 <i class="fas fa-bars"></i>
-              </div>
+            </div>
             <manue class="updated-nav" id="updated-nav">
                 <ul class="center items borderbt navItems">
                     <li><a href="../index.html">Home</a></li>
@@ -101,19 +101,22 @@
                     <li><a href="../contacts.html">Contact us</a></li>
                     <li>
                         <div class="close-nav" id="close-nav">
-                          <i class="fas fa-times"></i>
+                            <i class="fas fa-times"></i>
                         </div>
-                      </li>
+                    </li>
                 </ul>
             </manue>
         </div>
     </Navbar>
     <div class="wisdom-main wisdom-container">
-        <div class="sidebar" id="sidebar">
-            <ul id="article-list" class="wisodm-ui"></ul>
+        <div class="dropdown">
+            <button class="dropbtn">Articles Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <ul id="article-list"></ul>
+            </div>
         </div>
         <div class="content" id="content">
-            <h2>Select an article from the list</h2>
+            <h2>Select an article from the Menu</h2>
         </div>
     </div>
     <button onClick="topFunction()" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i>
@@ -156,7 +159,7 @@
         </p>
     </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020858849691263"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script>
         // Array of articles
         const articles = [
@@ -1148,13 +1151,14 @@
         function displayContent(index) {
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = `
-                <h2>${articles[index].title}</h2>
-                <p>${articles[index].content}</p>
-            `;
+        <h2>${articles[index].title}</h2>
+        <p>${articles[index].content}</p>
+    `;
         }
 
         // Populate the sidebar initially
         populateSidebar();
+
     </script>
 </body>
 
