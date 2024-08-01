@@ -111,7 +111,7 @@
     <div class="wisdom-main wisdom-container">
         
             <div class="dropdown">
-                <button class="dropbtn">Articles Menu</button>
+                <button class="dropbtn" onclick="toggleDropdown()">Articles Menu</button>
                 <div id="dropdown-content" class="dropdown-content">
                     <ul id="article-list"></ul>
                 </div>
@@ -1240,13 +1240,15 @@
             // }
         ];
 
-        // Function to populate the sidebar with article titles
         function populateSidebar() {
             const sidebar = document.getElementById('article-list');
             articles.forEach((article, index) => {
                 const li = document.createElement('li');
                 li.textContent = article.title;
-                li.addEventListener('click', () => displayContent(index));
+                li.addEventListener('click', () => {
+                    displayContent(index);
+                    closeDropdown();
+                });
                 sidebar.appendChild(li);
             });
         }
@@ -1258,6 +1260,22 @@
         <h2>${articles[index].title}</h2>
         <p>${articles[index].content}</p>
     `;
+        }
+
+        // Function to close the dropdown menu
+        function closeDropdown() {
+            const dropdownContent = document.getElementById('dropdown-content');
+            dropdownContent.style.display = 'none';
+        }
+
+        // Function to toggle the dropdown menu
+        function toggleDropdown() {
+            const dropdownContent = document.getElementById('dropdown-content');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
         }
 
         // Populate the sidebar initially
